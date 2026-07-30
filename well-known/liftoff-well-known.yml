@@ -1,0 +1,62 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of the /.well-known/ discovery surface on every Liftoff host
+description: >-
+  Results of probing the /.well-known/ discovery surface for every Liftoff host
+  known to the catalog. Liftoff publishes no public API, so there is no API base
+  host to probe; the hosts below are the marketing site (Framer-hosted) and the
+  application host. Status is the HTTP code observed at fetch time.
+  app.onliftoff.com is a single-page application whose server answers 200 with a
+  text/html SPA shell for EVERY /.well-known/ path, including paths that do not
+  exist — those are recorded as soft-404s (present-but-not-a-real-document) and
+  are deliberately not saved as artifacts. No document on any host returned a
+  correctly-typed payload, so no raw files were captured and no WellKnown
+  pointer is wired into apis.yml.
+hosts:
+  - host: https://www.onliftoff.com
+    notes: Framer-hosted marketing site
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://app.onliftoff.com
+    notes: >-
+      SPA host. Every path returns 200 text/html (the application shell), which
+      is a soft-404 rather than a real discovery document. Treated as not found.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        type: text/html; charset=utf-8
+        soft_404: true
+      - path: /.well-known/openid-configuration
+        status: 200
+        type: text/html; charset=utf-8
+        soft_404: true
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        type: text/html; charset=utf-8
+        soft_404: true
+      - path: /.well-known/api-catalog
+        status: 200
+        type: text/html; charset=utf-8
+        soft_404: true
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        type: text/html; charset=utf-8
+        soft_404: true
+  - host: https://liftoff.xyz
+    notes: >-
+      Legacy/alternate brand domain. Redirects to www.onliftoff.com, so it
+      resolves to the same Framer surface.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        redirects_to: https://www.onliftoff.com/.well-known/security.txt
+found: []
