@@ -1,21 +1,51 @@
 aid: liftoff
 name: Liftoff
-description: 'Liftoff is a company surfaced as a portfolio company of forerunner-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: health. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Liftoff (onliftoff.com, formerly liftoff.xyz) is a B2B network-based hiring and
+  networking platform for startup leaders and hiring managers. Rather than cold
+  applications or job-board sourcing, companies create a job search, attach a
+  self-set "Match Incentive" referral bonus, and share the search link with their
+  own network or with Liftoff's curated "Top Connectors" — senior leaders who
+  refer pre-vetted candidates from their professional circles. Candidates surface
+  through 2nd- and 3rd-degree trusted connections, and companies pay on a
+  success-only basis, with fees due after a new hire completes 90 days. Liftoff
+  targets seed-to-Series-B technology companies, primarily in the New York City
+  and San Francisco ecosystems, and positions itself between LinkedIn recruiting
+  and traditional retained search. Backed by Forerunner Ventures. Liftoff
+  publishes no public API, SDK, or developer portal; it does publish an llms.txt
+  for AI agent grounding. Not to be confused with Liftoff Mobile (liftoff.io, ad
+  tech) or useLiftoff (useliftoff.com, job-seeker interview practice).
 url: https://raw.githubusercontent.com/api-evangelist/liftoff/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/assets/3N0Cw6PgcqXYs02ke2T6FJTXLo.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - forerunner-ventures
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: portfolio-lead-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Health
+- Hiring
+- Recruiting
+- Talent
+- Human Resources
+- Professional Networking
+- Referrals
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +55,22 @@ maintainers:
 common:
 - type: Website
   url: https://www.onliftoff.com
+- type: LLMsTxt
+  url: llms/liftoff-llms.txt
+- type: DomainSecurity
+  url: security/liftoff-domain-security.yml
+- type: SignUp
+  url: https://app.onliftoff.com/join-hiring-waitlist
+- type: Login
+  url: https://app.onliftoff.com/login
+- type: Support
+  url: mailto:support@liftoff.xyz
+- type: TermsOfService
+  url: https://www.onliftoff.com/terms
+- type: PrivacyPolicy
+  url: https://www.onliftoff.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
