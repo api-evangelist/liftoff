@@ -64,25 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Liftoff (onliftoff.com, formerly liftoff.xyz) is a B2B network-based hiring and networking platform for startup leaders and hiring managers. Companies create a job search, attach a self-set "Match Incentive" referral bonus, and share the search link with their own network or with Liftoff's curated "Top Connectors" — senior leaders who refer pre-vetted candidates from their professional circles. Candidates surface through 2nd- and 3rd-degree trusted connections, and companies pay on a success-only basis, with fees due after a new hire completes 90 days.
+Liftoff (onliftoff.com, formerly liftoff.xyz) is a B2B network-based hiring and networking platform for startup leaders and hiring managers. Rather than cold applications or job-board sourcing, companies create a job search, attach a self-set "Match Incentive" referral bonus, and share the search link with their own network or with Liftoff's curated "Top Connectors" — senior leaders who refer pre-vetted candidates from their professional circles. Candidates surface through 2nd- and 3rd-degree trusted connections, and companies pay on a success-only basis, with fees due after a new hire completes 90 days. Liftoff targets seed-to-Series-B technology companies, primarily in the New York City and San Francisco ecosystems, and positions itself between LinkedIn recruiting and traditional retained search. Backed by Forerunner Ventures. Liftoff publishes no public API, SDK, or developer portal; it does publish an llms.txt for AI agent grounding. Not to be confused with Liftoff Mobile (liftoff.io, ad tech) or useLiftoff (useliftoff.com, job-seeker interview practice).
 
-Liftoff targets seed-to-Series-B technology companies, primarily in the New York City and San Francisco ecosystems, and positions itself between LinkedIn recruiting and traditional retained search.
+**Areas:** Company · Hiring · Recruiting · Talent · Human Resources · Professional Networking · Referrals · Software-as-a-Service
 
-Backed by: forerunner-ventures — https://www.onliftoff.com
+## Liftoff on APIs.io
 
-## Not to be confused with
+Everything profiled for Liftoff is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/liftoff/](https://apis.io/providers/liftoff/)** — or go straight to one of the APIs or properties below.
 
-- **Liftoff Mobile** (liftoff.io) — mobile marketing / ad tech, unrelated.
-- **useLiftoff** (useliftoff.com) — AI interview practice and job matching for job seekers, unrelated.
+### Published properties
 
-## API surface
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Liftoff publishes **no public API**, SDK, developer portal, API documentation, or GitHub organization. There is no OpenAPI, AsyncAPI, webhook, or MCP surface to harvest, so the spec-bearing artifacts of the enrichment pipeline (openapi, overlays, errors, lifecycle, scopes, authentication, conventions, data-model, skills, arazzo, agentic-access, packages, cli, sandbox, components, changelog) are intentionally absent rather than fabricated.
+#### Security (1)
 
-## Artifacts
+Authentication, trust centre, and vulnerability disclosure.
 
-| Artifact | File | Method |
-|---|---|---|
-| llms.txt | `llms/liftoff-llms.txt` | searched (verbatim from https://www.onliftoff.com/llms.txt) |
-| Domain security | `security/liftoff-domain-security.yml` | probed |
-| Well-Known index | `well-known/liftoff-well-known.yml` | searched (no documents found) |
+- [Liftoff Domain Security](https://apis.io/security/liftoff/liftoff-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.onliftoff.com)
+- [Sign up](https://app.onliftoff.com/join-hiring-waitlist)
+- [Terms of service](https://www.onliftoff.com/terms)
+- [Privacy policy](https://www.onliftoff.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 11.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Employment & Payroll
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/liftoff/](https://apis.io/providers/liftoff/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Liftoff: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/liftoff/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
